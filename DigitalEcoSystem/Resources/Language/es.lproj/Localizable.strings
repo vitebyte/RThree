@@ -1,0 +1,230 @@
+/* 
+  Localization.strings
+  DigitalEcoSystem
+
+  Created by Narender Kumar on 05/04/17.
+  Copyright © 2017 Dean and Deluca. All rights reserved.
+*/
+
+"Sign In with your Dean & Deluca account details" = "Inicie sesión con los detalles de su cuenta de Dean & Deluca";
+
+"Hello world" = "Hola Mundo";
+
+"Get Started" = "Empezar";
+
+"Sign In" = "Registrarse";
+
+"Email Address" = "Dirección de correo electrónico";
+
+"Password" = "Contraseña";
+
+"Next    " = "Siguiente    ";
+
+"Next Question" = "Próxima pregunta";
+
+"Finish Later" = "Terminar más tarde";
+
+"A Dope Title" = "Un título de droga";
+
+"Some really really cool onboarding descriptions which should take up 3 lines maximum. Probably" = "Algunas descripciones realmente interesantes que deben ocupar hasta 3 líneas máximo. Probablemente";
+
+
+"Choose your Language" = "Elige tu idioma";
+
+"Upload a profile photo" = "Subir una foto de perfil";
+
+"Take Photo" = "Tomar foto";
+
+"Use Camera Roll" = "Utilice el rollo de la cámara";
+
+"Finish" = "Terminar";
+
+"Logout" = "Cerrar sesión";
+
+"Start" = "Comienzo";
+
+"My DDXP" = "Mi DDXP";
+
+"Welcome" = "Bienvenido";
+
+"Your Trainings" = "Tus Entrenamientos";
+
+"Review trainees results" = "Revisar los resultados de los alumnos";
+
+"New" = "Nuevo";
+
+"In-Progress" = "En progreso";
+
+"Completed" = "Terminado";
+
+"Expired" = "Muerto";
+
+"Most Recent" = "Más reciente";
+
+"Feed" = "Alimentar";
+
+"Performance" = "Actuación";
+
+"Roster" = "Lista";
+
+"Training" = "Formación";
+
+"Your Training" = "Tu entrenamiento";
+
+"Associates" = "Asociados";
+
+"Trainers" = "Entrenadores";
+
+"Notification" = "Notificación";
+
+"Select Modules" = "Seleccionar Módulos";
+
+"Confirm" = "Confirmar";
+
+"Assign a Trainer" = "Asignar un entrenador";
+
+"Assign a Trainee" = "Asignar un aprendiz";
+
+"Choose an Associate" = "Elegir un Asociado";
+
+"Associate Trainer" = "Entrenador asociado";
+
+" selected" = " seleccionado";
+
+
+"Feed" = "Alimentar";
+
+"No Associate Trainers" = "No hay entrenadores asociados";
+
+"Assign an Associate as an Associate Trainer using the \"+\" found above." = "Asigne un Asociado como Entrenador Asociado usando el \"+\" encontrado arriba.";
+
+
+"Question" = "Pregunta";
+
+"of" = "de";
+
+"Well done!"  = "Bien hecho!";
+
+"of questions answered correctly" = "De las preguntas respondidas correctamente";
+
+"attempt remaining." = "Intentar quedarse.";
+
+"Complete!" = "Completar!";
+
+"Associates" = "Asociados";
+
+"Trainers" = "Entrenadores";
+
+"Error" = "Error";
+
+"Success" = "Éxito";
+
+"Failure" = "Fracaso";
+
+"Information" = "Información";
+
+"No network" = "Sin red";
+
+"Please Confirm" = "Por favor confirmar";
+
+"Unable to Login" = "Incapaz de iniciar sesión";
+
+"Unable to Upload Image" = "No se puede cargar la imagen";
+
+"Unable to Choose Language" ="No se puede elegir el idioma";
+
+"Unable to connect, check your network connection." = "No se puede conectar, compruebe su conexión de red.";
+
+"An error occurred while processing." = "Se ha producido un error durante el procesamiento.";
+
+"Could not load page." = "No se pudo cargar la página.";
+
+"Your session has expired. Please login again" = "Tu sesión ha caducado. Inicia sesión de nuevo";
+
+"Please fill password." = "Por favor llene la contraseña.";
+
+"Please fill email address." = "Por favor, rellene la dirección de correo electrónico.";
+
+"Incorrect password, please try again." =" Contraseña incorrecta. Por favor, pruebe de nuevo.";
+
+"Incorrect email, please try again." = "Correo incorrecto, inténtalo de nuevo.";
+
+"New password and confirm password do not match." = "La nueva contraseña y la contraseña de confirmación no coinciden.";
+
+"Please fill email address and password." = "Por favor, rellene la dirección de correo electrónico y la contraseña.";
+
+"Incorrect email and password, please try again." = "Correo electrónico y contraseña incorrectos, inténtalo de nuevo.";
+
+"Please select a trainer for the training" = "Por favor seleccione un entrenador para el entrenamiento";
+
+"Please select atleast one trainee for the training" = "Por favor seleccione al menos un aprendiz para el entrenamiento";
+
+"Please select atleast one training" = "Por favor seleccione al menos un entrenamiento";
+
+"Sorry, we can't log you in right now. Please try again" = "Lo sentimos, no podemos iniciar sesión en este momento. Vuelve a intentarlo";
+
+"couldn't parse the response" = "No se pudo analizar la respuesta";
+
+"Notifications" = "Notificaciones";
+
+"Try Again?" = "Inténtalo de nuevo?";
+
+"select" = "seleccionar";
+
+"Trainees" = "Aprendices";
+
+"Training" = "Formación";
+
+"Assign " = "Asignar ";
+
+" as an Associate Trainer" = "Como entrenador asociado";
+
+"Logout" = "cerrar sesión";
+
+"Are you sure want to logout?" =  "Seguro que quieres cerrar la sesión?";
+
+"Ok" ="De acuerdo";
+
+"Cancel" = "Cancelar";
+
+"No Camera" = "No Camaras";
+
+"Sorry, this device has no camera" = "Lo siento, este dispositivo no tiene cámara";
+
+"Done" = "Hecho";
+
+"Search Associates" ="Asociados de búsqueda";
+
+"No questions are available for this training" = "No hay preguntas disponibles para este entrenamiento";
+
+"Associate Trainer assigned" = "Entrenador Asociado asignado";
+
+"Please select any option." = "Por favor, seleccione cualquier opción.";
+
+"Unable to choose language. Please try after some time." = "No se puede elegir el idioma. Intente después de algún tiempo.";
+
+"Unable to update profile photo. Please try after some time." = "No se puede actualizar la foto del perfil. Intente después de un tiempo.";
+
+"Watch later" = "Ver despues";
+
+"Assign Trainee(s)" = "Asignar a los alumnos";
+
+"Choose Associate(s)"= "Elegir asociados";
+
+"Unable to play video. Please try again" = "No se puede reproducir el video. Vuelve a intentarlo";
+
+"No more attempts left. Please contact your manager" = "No más intentos a la izquierda.Póngase en contacto con su gerente";
+
+"Looking good, " = "Se ve bien, ";
+
+"Select at least one module from the list" = "Seleccione al menos un módulo de la lista";
+
+"Unable to save quiz result. Please try again" = "No se pudo guardar el resultado del concurso. Vuelve a intentarlo";
+
+"You have already completed this training." = "Ya has completado este entrenamiento.";
+
+"Sorry, you have no trainee" = "Lo siento, no tienes ningún aprendiz";
+
+"This trainee has no Approve/Reject training request" =
+"Este aprendiz no tiene ninguna solicitud de entrenamiento de Aprobar / Rechazar";
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AnswerInfo" representedClassName=".AnswerInfo" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCorrect" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <relationship name="questionInfo" maxCount="1" deletionRule="Nullify" destinationEntity="QuestionInfo" inverseName="answersInfo" inverseEntity="QuestionInfo" syncable="YES"/>
+    </entity>
+    <entity name="FeedInfo" representedClassName=".FeedInfo" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="interval" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isMarkedRead" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="questionFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="videoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questionsInfo" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="QuestionInfo" inverseName="feedInfo" inverseEntity="QuestionInfo" syncable="YES"/>
+    </entity>
+    <entity name="QuestionInfo" representedClassName=".QuestionInfo" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selectedAnswer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="answersInfo" toMany="YES" deletionRule="Cascade" destinationEntity="AnswerInfo" inverseName="questionInfo" inverseEntity="AnswerInfo" syncable="YES"/>
+        <relationship name="feedInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FeedInfo" inverseName="questionsInfo" inverseEntity="FeedInfo" syncable="YES"/>
+        <relationship name="quizInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="QuizInfo" inverseName="questionsInfo" inverseEntity="QuizInfo" syncable="YES"/>
+    </entity>
+    <entity name="QuizInfo" representedClassName=".QuizInfo" syncable="YES">
+        <attribute name="completedUpto" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="noOfAttempts" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="resultPercentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalQuestions" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="questionsInfo" toMany="YES" deletionRule="Cascade" destinationEntity="QuestionInfo" inverseName="quizInfo" inverseEntity="QuestionInfo" syncable="YES"/>
+        <relationship name="trainingInfo" maxCount="1" deletionRule="Nullify" destinationEntity="TrainingInfo" inverseName="quizInfo" inverseEntity="TrainingInfo" syncable="YES"/>
+    </entity>
+    <entity name="TrainingInfo" representedClassName=".TrainingInfo" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="percentCompleted" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playbackInterval" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="remainingAttempts" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subcategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="videoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="quizInfo" maxCount="1" deletionRule="Cascade" destinationEntity="QuizInfo" inverseName="trainingInfo" inverseEntity="QuizInfo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AnswerInfo" positionX="160" positionY="144" width="128" height="105"/>
+        <element name="FeedInfo" positionX="-182" positionY="207" width="128" height="225"/>
+        <element name="QuestionInfo" positionX="-11" positionY="63" width="128" height="135"/>
+        <element name="QuizInfo" positionX="-198" positionY="-9" width="128" height="135"/>
+        <element name="TrainingInfo" positionX="-405" positionY="-0" width="128" height="255"/>
+    </elements>
+</model>
